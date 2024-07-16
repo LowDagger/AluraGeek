@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-azul-suave: #E0F7FA; /* Slightly lighter blue */
+    --color-azul-fuerte: #1976D2; /* Darker blue */
+    --color-blanco: #ffffff;
+    --color-gris-suave: #F5F5F5; /* Lighter gray */
+    --color-gris-regular: #6B6B6B; /* Slightly lighter gray */
+    --color-gris-fuerte: #333333; /* Darker gray */
+    --font-family: 'Roboto', sans-serif; /* New font */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+body {
+    color: var(--color-gris-fuerte);
+    font-family: var(--font-family);
+    background-color: var(--color-gris-suave); /* Added background color */
+}
+
+.container {
+    padding: 1.5rem; /* Increased padding */
+}
+
+.titulo {
+    font-size: 1.5rem; /* Slightly larger font size */
+    margin: 0;
+    color: var(--color-azul-fuerte); /* Changed title color */
+}
+
+.parrafo {
+    margin: 0 0 1.5rem 0; /* Increased margin */
+    color: var(--color-gris-regular); /* Changed paragraph color */
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 2.5rem 2rem; /* Increased padding */
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .container {
+        padding: 1rem; /* Changed padding */
+    }
+
+    .titulo {
+        font-size: 2.2rem; /* Slightly larger font size */
+    }
+}
